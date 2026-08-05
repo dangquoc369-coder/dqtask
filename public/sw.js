@@ -3,13 +3,11 @@
  * Handles offline caching, asset serving, and background sync notifications.
  */
 
-const CACHE_NAME = 'tradeflow-v1';
+const CACHE_NAME = 'tradeflow-v2';
 const ASSETS_TO_CACHE = [
   '/',
-  '/index.html',
   '/manifest.json',
-  '/src/main.tsx',
-  '/src/index.css'
+  '/logo.svg'
 ];
 
 self.addEventListener('install', (event) => {
