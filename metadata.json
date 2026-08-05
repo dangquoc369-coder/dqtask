@@ -1,0 +1,6 @@
+{
+  "name": "DQ task pro",
+  "description": "Ứng dụng Quản Lý Công Việc, Kỷ Luật & Nhật Ký Giao Dịch Chuyên Nghiệp",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
