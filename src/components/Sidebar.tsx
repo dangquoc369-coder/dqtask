@@ -36,7 +36,7 @@ interface NavItem {
 }
 
 export const Sidebar: React.FC = () => {
-  const { activeView, setActiveView, setQuickAddOpen, tasks, telegram, trades } = useAppStore();
+  const { activeView, setActiveView, setQuickAddOpen, tasks, telegram, trades, habits } = useAppStore();
 
   const pendingTasksCount = tasks.filter((t) => !t.completed).length;
 
@@ -47,7 +47,7 @@ export const Sidebar: React.FC = () => {
     { id: 'matrix', label: 'Ma Trận Eisenhower', icon: Grid2X2 },
     { id: 'timeline', label: 'Timeline Dòng Thời Gian', icon: Clock },
     { id: 'calendar', label: 'Lịch Calendar', icon: CalendarIcon },
-    { id: 'habits', label: 'Thói Quên Habit Tracker', icon: Activity },
+    { id: 'habits', label: 'Thói Quen Habit Tracker', icon: Activity, badge: habits.length || undefined },
     { id: 'journal', label: 'Nhật Ký Sống Daily Journal', icon: BookOpen },
   ];
 
